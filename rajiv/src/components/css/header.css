@@ -7,3 +7,7 @@
 * {
   font-family: Quicksand;
 }
+
+.hideme {
+  opacity: 0 !important;
+}

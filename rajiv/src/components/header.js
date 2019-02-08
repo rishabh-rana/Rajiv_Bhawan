@@ -8,14 +8,14 @@ const Header = props => {
       <h1>Rajiv Bhawan</h1>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
               </Link>
             </li>
           </ul>
-          <ul className="navbar-nav abs-center-x">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/admin">
                 Admin
@@ -26,6 +26,13 @@ const Header = props => {
             <li className="nav-item">
               <Link className="nav-link" to="/gallery">
                 Gallery
+              </Link>
+            </li>
+          </ul>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" to="/facilities">
+                Facilities
               </Link>
             </li>
           </ul>

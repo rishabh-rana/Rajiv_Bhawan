@@ -5,7 +5,20 @@ import { Link } from "react-router-dom";
 const Header = props => {
   return (
     <React.Fragment>
-      <h1>Rajiv Bhawan</h1>
+      <div className="text-center mainText"
+          style={{
+              width: "100%",
+              height: "100px",
+              zIndex: "-1",
+              background:"url('https://www.iitr.ac.in/campus_life/Hostels/RajivBhawan/images/slider_main/rgb4.jpg')",
+              backgroundPosition: "top",
+              position:"absolute",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              opacity: "0.6"
+            }}
+        ></div>
+      <h1 className="text-center mainText" style={{ zIndex: "1"}}> RAJIV BHAWAN</h1>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <ul class="navbar-nav">

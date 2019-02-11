@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import chief from '../pic/cheif_warden.jpeg';
 
 const AdminBlockMain = styled.div`
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
@@ -59,7 +60,7 @@ const AdminBlock = props => {
         />
         <Picture
           style={{
-            background: image,
+            backgroundImage: image,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center"

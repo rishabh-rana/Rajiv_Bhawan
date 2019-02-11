@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { css } from "styled-components";
+import cheif from "../pic/cheif_warden.jpeg"
+
 
 
 const FacilityBlockMain = styled.div`
@@ -10,7 +12,7 @@ const FacilityBlockMain = styled.div`
 
 const Picture = styled.div`
   width: 100%;
-  height: 400px;
+  height: 300px;
   opacity: 0.7;
 `;
 
@@ -21,12 +23,12 @@ const FacilityName = styled.div`
 
   @media (max-width: 767px) {
     margin-bottom: 50px;
-  }	
+  } 
 
 `;
 
 const FacilityContent = styled.div`
-	font-size: 22px;
+  font-size: 22px;
 `;
 
 const TextContainer = styled.div`
@@ -36,29 +38,29 @@ const TextContainer = styled.div`
 `;
 
 const FacilityBlock = props => {
-	var image = "url(" + props.picture + ")";
+  var image = "url(" + props.picture + ")";
 
-	return(
-	  <FacilityBlockMain className="row p-0"
+  return(
+    <FacilityBlockMain className="row p-0"
         style={{
           background: props.color
         }} >
-		<div className="col-md-3 col-12 p-0 position-relative">
-        	<Picture
-	          style={{
-	            background: image,
-	            backgroundSize: "cover",
-	            backgroundRepeat: "no-repeat",
-	            backgroundPosition: "center"
-	          }}
-	        />
-	    </div>
-	    <div className="col-md-9 col-12 p-0 position-relative">
-	    <TextContainer className="container" style={{ color: "white" }}>
-	   		<FacilityName>{props.name}</FacilityName>	
-	      	<FacilityContent>{props.content}</FacilityContent>
-	    </TextContainer>
-	    </div>
+    <div className="col-md-3 col-12 p-0 position-relative">
+          <Picture
+            style={{
+              background: image,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center"
+            }}
+          />
+      </div>
+      <div className="col-md-9 col-12 p-0 position-relative">
+      <TextContainer className="container" style={{ color: "white" }}>
+        <FacilityName>{props.name}</FacilityName> 
+          <FacilityContent>{props.content}</FacilityContent>
+      </TextContainer>
+      </div>
       </FacilityBlockMain>
       );
 };

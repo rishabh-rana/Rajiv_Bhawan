@@ -11,3 +11,12 @@
 .hideme {
   opacity: 0 !important;
 }
+
+.mainText{
+  background-position: center;
+  padding: 10px;
+  font-family: Righteous;
+  font-size: 50px;
+  color: black;
+  background: ;
+}
